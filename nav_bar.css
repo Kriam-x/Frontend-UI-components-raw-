@@ -1,0 +1,189 @@
+body {
+    font-family: monospace;
+    padding: 15px;
+    margin: 0;
+    background-color: rgb(26, 29, 32);
+    height: 100vh;
+    margin-bottom: 12px;
+}
+
+h1,
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+    padding: 12px;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav1 {
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 100vh;
+    padding: 5px;
+    margin: 8px;
+    border: 4px solid rgb(0, 70, 70);
+}
+
+.nav1 ul {
+    /* border: 2px solid greenyellow; */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav1 li {
+    display: inline;
+    font-size: large;
+}
+
+.nav1 a {
+    color: steelblue;
+    position: relative;
+    text-decoration: none;
+    /* background-color: ; */
+
+}
+
+.nav1 a::after {
+    /* Jab hover karoge toh abc likha aajega uske upar se */
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: cornflowerblue;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+
+
+}
+
+.nav1 a:hover:after {
+    transform: scaleX(1);
+}
+
+.nav1 .button {
+    height: 20px;
+    width: 100px;
+    color: steelblue;
+    background-color: transparent;
+    border-radius: 9px;
+    border: none;
+    cursor: auto;
+    font-size: large;
+}
+
+.nav2 {
+    border: 3px solid silver;
+    border-radius: 8px;
+    width: 25vh;
+    height: 200px;
+    padding: 5px;
+    margin: 0;
+}
+
+.nav2 li {
+    /* border: 2px solid red; */
+    list-style: none;
+    padding: 7px;
+    font-size: large;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.nav2 a {
+    text-decoration: none;
+    color: antiquewhite;
+    width: 100%;
+    padding: 7px;
+}
+
+.nav2 .button {
+    display: flex;
+    justify-content: center;
+    color: antiquewhite;
+    margin-top: 20px;
+    font-size: medium;
+    padding: 2px;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.nav2 .button:hover {
+    border: 5px solid rgba(38, 43, 52, 0.915);
+    background-color: rgba(91, 89, 89, 0.605);
+    cursor: pointer;
+}
+
+
+.nav3{
+    /* border: 3px solid rgb(145, 181, 248); */
+    margin: 0;
+    padding: 2px;
+    width: 100vh;
+}
+.nav3 ul{
+    border-radius: 9px;
+    /* border: 3px solid chocolate; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3px;
+    padding: 2px;
+    background-color: rgb(3, 154, 154);
+}
+.nav3 li{
+    list-style-type: none;
+    margin: 6px;
+    padding: 4px;
+    margin-left: 0px;
+    /* border: 3px solid rgb(162, 162, 162); */
+    background-color: rgb(3, 154, 154);
+}
+.nav3 a{
+    color: aliceblue;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    font-size: large;
+}
+
+.nav3 .dropdown-content{
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+/* Nav3 ke andar dropdown jaise hi hover ho property badal do display ki */
+.nav3 li:hover .dropdown-content{
+    display: block;
+    position: absolute;
+    margin-top: 4px;
+    background-color: darkcyan;
+    margin: 0;
+    min-width: 20px;
+    padding: 3px;
+}
+.nav3 .dropdown-content a:hover{
+    color: burlywood;
+}
+.nav3 a:hover{
+    color: aquamarine;
+}

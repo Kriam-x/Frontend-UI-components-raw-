@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #55423d;
+    color: floralwhite;
+}
+/* Ye badi vaali main grid hai apni */
+.grid-container{
+    border: 2px solid whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+}
+/* C1 badi grid mai ek chotti grid hai  */
+/* Yeh apni seprate grid properties dikhaega */
+/* repeat(count , size) baar baar likhne ki jagha aise likh lo */
+.c1 {
+    border: 2px solid whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 120px 100px 140px;
+    margin: 10px;
+}
+
+/* C2 badi grid mai ek chotti grid hai  */
+/* Ye apni seprate grid properties dikhaega */
+.c2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 120px 100px 140px;
+    border: 2px solid whitesmoke;
+    margin: 10px;
+
+}
+.item1{
+    grid-row: 1/4;
+}
+.item3{
+    grid-column:5/2;
+}
+
+.item {
+    border: 2px solid wheat;
+    margin: 9px;
+    padding: 3px;
+    
+}
+
+.item-2 {
+    border: 2px solid wheat;
+    margin: 9px;
+    padding: 3px;
+
+}
